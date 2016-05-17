@@ -22,14 +22,13 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
-from __future__ import print_function
+from __future__ import print_function, absolute_import
 
 import math
 import numpy
 import unittest
 
-import blackbody
-import colormodels
+from . import blackbody, colormodels
 
 # FIXME: The following calculation is not working currently.
 # It is an attempt to get the scale of the intensity correct.

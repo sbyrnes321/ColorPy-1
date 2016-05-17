@@ -116,9 +116,11 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
+from __future__ import absolute_import
+
 import math, numpy
 
-import colormodels
+from . import colormodels
 
 # Assumed physical brightness of the monitor [W/m^2]
 #   80 cd/m^2 * 20.3 mW/cd (assuming light at 556 nm)

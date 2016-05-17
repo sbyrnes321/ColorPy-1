@@ -27,16 +27,12 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
-from __future__ import print_function
+from __future__ import print_function, absolute_import
 
 import unittest
 
-import test_colormodels
-import test_ciexyz
-import test_illuminants
-import test_blackbody
-import test_rayleigh
-import test_thinfilm
+from . import (test_colormodels, test_ciexyz, test_illuminants,
+               test_blackbody, test_rayleigh, test_thinfilm)
 
 def test ():
     # no test cases for plots/misc - but figures.py will exercise those.

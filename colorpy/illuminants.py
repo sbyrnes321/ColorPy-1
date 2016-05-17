@@ -88,9 +88,9 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
-import ciexyz
-import blackbody
-import plots
+from __future__ import absolute_import
+
+from . import ciexyz, blackbody, plots
 
 # table of CIE Illuminant D65 spectrum.
 # data from: http://cvrl.ioo.ucl.ac.uk/database/data/cie/Illuminantd65.txt

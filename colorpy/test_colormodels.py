@@ -22,13 +22,12 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
-from __future__ import print_function
+from __future__ import print_function, absolute_import
 
 import math, random, numpy
 import unittest
 
-import colormodels
-import ciexyz
+from . import colormodels, ciexyz
 
 # Functions to calculate the cutoff point between various algorithms.
 # These do not really belong here...

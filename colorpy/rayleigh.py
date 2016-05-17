@@ -62,14 +62,12 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
+from __future__ import absolute_import
+
 import math
 import numpy, pylab
 
-import colormodels
-import ciexyz
-import illuminants
-import blackbody
-import plots
+from . import colormodels, ciexyz, illuminants, blackbody, plots
 
 def rayleigh_scattering (wl_nm):
     '''Get the Rayleigh scattering factor for the wavelength.

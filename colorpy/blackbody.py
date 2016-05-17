@@ -67,13 +67,13 @@ GNU Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public License
 along with ColorPy.  If not, see <http://www.gnu.org/licenses/>.
 '''
+from __future__ import absolute_import
+
 import math
 import numpy
 import pylab
 
-import colormodels
-import ciexyz
-import plots
+from . import colormodels, ciexyz, plots
 
 # Physical constants in mks units
 PLANCK_CONSTANT   = 6.6237e-34      # J-sec
